@@ -54,7 +54,7 @@ namespace Sandbox
 
         public void PrintInfo()
         {
-            Console.WriteLine($"Skole navn:\t{_name}\nSkole adresse:\t{_adress}\nSkole tlf:\t{_phoneNumber} ");
+            Console.WriteLine($"Skole navn:\t{_name}\nSkole adresse:\t{_adress}\nSkole tlf:\t{_phoneNumber}\nHold:\t{_team}");
         }
 
 
