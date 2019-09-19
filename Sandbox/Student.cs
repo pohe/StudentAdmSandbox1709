@@ -17,18 +17,33 @@ namespace Sandbox
         private int _karakter1;
         private int _karakter2;
 
+        private static int counter = 0;
 
+        private int _studNo;
 
+        public int StudNo
+        {
+            get { return _studNo; }
+        }
         //Constructor
         public Student(string navn, string cpr, string adresse, string telefonummer)
         {
+            counter = counter + 1; 
+            _studNo = counter;
             _navn = navn;
             _cpr = cpr;
             _adresse = adresse;
             _telefonummer = telefonummer;
         }
 
-
+        //public Student(string navn, string cpr, string adresse, string telefonummer, int studentNo)
+        //{
+        //    _studNo = studentNo;
+        //    _navn = navn;
+        //    _cpr = cpr;
+        //    _adresse = adresse;
+        //    _telefonummer = telefonummer;
+        //}
         //Properties
         public string Navn
         {

@@ -11,7 +11,6 @@ namespace Sandbox
             School school1 = new School("Zeuland", "Maglegaardsvej", "00110022");
             school1.Name = "Zealand";
             
-            
             // hold
             Hold holdA = new Hold("Hold A", "123", "12122019");
             holdA.HoldNo = "234";
@@ -23,7 +22,9 @@ namespace Sandbox
             Student student1 = new Student("Egon olsen", "0101012431", "vridsløse 02", "88888888");
             Student student2 = new Student("Benny", "0202032679", "vridsløse 03", "51525354");
             Student student3 = new Student("Kjeld", "1111111111", "vridsløse 04", "112");
-            
+            Console.WriteLine($"Studentno for student1 { student1.StudNo}");
+            Console.WriteLine($"Studentno for student2 { student2.StudNo}");
+            Console.WriteLine($"Studentno for student3 { student3.StudNo}");
             holdA.S1 = student1;
             holdA.S2 = student2;
             holdA.S3 = student3;
