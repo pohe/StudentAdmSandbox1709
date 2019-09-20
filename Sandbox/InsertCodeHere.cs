@@ -12,8 +12,8 @@ namespace Sandbox
             school1.Name = "Zealand";
             
             // hold
-            Hold holdA = new Hold("Hold A", "123", "12122019");
-            holdA.HoldNo = "234";
+            Hold holdA = new Hold("Hold A", "12122019");
+            
             
 
             school1.Hold = holdA;
@@ -29,6 +29,8 @@ namespace Sandbox
             holdA.S2 = student2;
             holdA.S3 = student3;
 
+            
+            
 
             //Teacher
             Teacher poul = new Teacher("Poul", "123456", "Some address", 8008);
@@ -36,7 +38,7 @@ namespace Sandbox
 
             holdA.Teacher = poul;
             //Lokale
-            Lokale lokaleA = new Lokale("A2.020");
+            Lokale lokaleA = new Lokale();
             
 
             holdA.Lokale = lokaleA;

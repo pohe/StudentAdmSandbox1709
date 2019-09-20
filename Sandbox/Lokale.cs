@@ -9,19 +9,20 @@ namespace Sandbox
     //properties
     public class Lokale
     {
-        private string _no;
+        private int _no;
+        private static int counter = 0;
 
-        public string Number
+        public int Number
         {
             get { return _no; }
 
-            set { _no = value; }
         }
 
         //constructor, signatur
-        public Lokale(string no)
+        public Lokale()
         {
-            _no = no;
+            counter = counter + 1;
+            _no = counter;
         }
 
         //Method

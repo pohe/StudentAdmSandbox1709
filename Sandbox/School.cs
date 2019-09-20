@@ -11,9 +11,12 @@ namespace Sandbox
         private string _name;
         private string _adress;
         private string _phoneNumber;
+        private int _schoolID;
 
         private Hold _team;
         private Teacher _teacher;
+
+        private static int _counter = 0;
 
         public string Name
         {
@@ -50,13 +53,14 @@ namespace Sandbox
             _name = name;
             _adress = adress;
             _phoneNumber = phoneNumber;
+            _counter = _counter + 1;
+            _schoolID = _counter;
+
         }
 
         public void PrintInfo()
         {
-            Console.WriteLine($"Skole navn:\t{_name}\nSkole adresse:\t{_adress}\nSkole tlf:\t{_phoneNumber}\nHold:\t{_team}");
+            Console.WriteLine($"Skole navn:\t{_name}\nSkole adresse:\t{_adress}\nSkole tlf:\t{_phoneNumber}\nHold:\t{_team}\nSkole ID:\t{_schoolID}");
         }
-
-
     }
 }

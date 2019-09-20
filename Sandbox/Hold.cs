@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,6 +9,10 @@ namespace Sandbox
 {
     public class Hold
     {
+
+        private static int counter = 0;
+        private const int maxNoOfStudents= 28;
+
         //instance fields
         private string _name;
         private string _holdno;
@@ -22,13 +27,16 @@ namespace Sandbox
         private Teacher _teacher; 
 
         //Constructor
-        public Hold(string name, string holdNo, string startDate)
+        public Hold(string name, string startDate)
         {
+            
+            counter = counter + 1;
             _name = name;
-            _holdno = holdNo;
+            _holdno = counter.ToString();
             _startdate = startDate;
         }
 
+        
         // properties
         public string Name
         {
@@ -39,7 +47,7 @@ namespace Sandbox
         public string HoldNo
         {
             get { return _holdno; }
-            set { _holdno = value; }
+            //set { _holdno = value; }
         }
 
         public string StartDate
