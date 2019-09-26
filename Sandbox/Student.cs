@@ -25,6 +25,14 @@ namespace Sandbox
         {
             get { return _studNo; }
         }
+
+        /// <summary>
+        /// Best default constructor ever 
+        /// </summary>
+        public Student()
+        {
+            
+        }
         //Constructor
         public Student(string navn, string cpr, string adresse, string telefonummer)
         {

@@ -30,6 +30,8 @@ namespace Sandbox
         {
             Console.WriteLine($" Klassen nr:{_no}.");
         }
+
+        
     }
 
 }

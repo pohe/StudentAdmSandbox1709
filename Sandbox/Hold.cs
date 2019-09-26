@@ -75,7 +75,7 @@ namespace Sandbox
             set { _s3 = value; }
         }
 
-
+        
 
         public Lokale Lokale
         {
@@ -99,11 +99,24 @@ namespace Sandbox
 
         public void PrintStudents()
         {
-            _s1.PrintInfo();
-            _s2.PrintInfo();
-            _s3.PrintInfo();
+            _s1?.PrintInfo();
+            _s2?.PrintInfo();
+            _s3?.PrintInfo();
         }
 
+        public string CheckIfFull()
+        {
+            //if (_s1 != null && _s2 != null && _s3 != null)
+            //{
+            //    return true;
+            //}
+            //else
+            //{
+            //    return false; 
+            //}
+
+            return (_s1 != null && _s2 != null && _s3 != null) ? "Sandt" : "Falsk"; 
+        }
 
     }
 }

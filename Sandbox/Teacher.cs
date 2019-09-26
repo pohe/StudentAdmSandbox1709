@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -81,6 +82,26 @@ namespace Sandbox
         {
             Console.WriteLine($"Navn: {_navn} \nCPR: {_cpr} \nAdresse: {_adresse} \nSalery: {_salery}");
         }
+
+        public int EvaluateTest(int score)
+        {
+            int grade = 0; 
+            switch (score)
+            {
+                case 10: grade = 2;
+                    break;
+                case 20: grade = 4;
+                    break;
+                case 30: grade = 7;
+                    break;
+                default: grade = 12;
+                    break;
+
+            }
+
+            return grade;
+        }
+        
 
     }
 
