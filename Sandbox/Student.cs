@@ -97,7 +97,17 @@ namespace Sandbox
             return average;
         }
 
-        
+        public bool CheckPassed()
+        {
+            //if (_karakter1 > 0 && _karakter2 > 4 && Average() >= 2)
+            //    return true;
+            //else
+            //{
+            //    return false;
+            //}
+
+            return (_karakter1 > 0 && _karakter2 > 4 && Average() >= 2);
+        }
 
         public void PrintInfo()
         {
