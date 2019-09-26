@@ -17,8 +17,8 @@ namespace Sandbox
             
             // hold
             Hold holdA = new Hold("Hold A", "12122019");
+            Hold holdB = new Hold("Hold B", "34343434");
 
-            
 
             school1.Hold = holdA;
             //Students
